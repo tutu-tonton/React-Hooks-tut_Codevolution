@@ -10,3 +10,8 @@
 
 - Stateのsetter更新注意点： 古い値を利用して新しい値を算出する場合には、関数を与えるのが安全
 
+## 4.useState with object
+
+- hooksのstateSetterはobjectをmergeしない.クラス型との違い
+
+- => spread演算子使うこと
