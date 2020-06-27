@@ -1,5 +1,6 @@
 //========================================
 //  lesson9 Run effects only once
+//  lesson10 useEffect with cleanup
 //========================================
 
 import React, { useState, useEffect } from 'react';
@@ -17,6 +18,11 @@ const HookMouse = () => {
 	useEffect(() => {
 		console.log('useEffect called');
 		window.addEventListener('mousemove', logMousePosition);
+		// cleanup: アンマウント時には解除する
+		return () => {
+			console.log('Component unmounting code');
+			window.removeEventListener('mousemove', logMousePosition);
+		};
 	}, []);
 
 	return (

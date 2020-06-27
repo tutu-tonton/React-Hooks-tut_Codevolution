@@ -33,3 +33,6 @@
 
 - componentDidMountと同じように、1度だけ実行したい
 
+## 10 useEffect with cleanup
+
+- アンマウント時には、subscription, listenerを解除すること
