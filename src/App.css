@@ -9,7 +9,7 @@
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: white;
+	color: rgba(0, 0, 0, 0.67);
 }
 
 .App-logo {
@@ -313,6 +313,7 @@ button {
 
 button {
 	font-family: var(--font-family);
+	margin: 0.5rem;
 }
 
 button:hover {
