@@ -6,12 +6,14 @@ import './App.css';
 // import HookCounterThree from './components/HookCounterThree.component';
 // import HookCounterFour from './components/HookCounterFour.component';
 // import ClassCounterOne from './components/ClassCounterOne';
-import HookCounter from './components/HookCounter';
+// import HookCounter from './components/HookCounter';
+import HookCounterOne from './components/HookCounterOne';
 
 function App() {
 	return (
 		<div className="App">
-			<HookCounter />
+			<HookCounterOne />
+			{/* <HookCounter /> */}
 			{/* <ClassCounterOne /> */}
 
 			{/* ===== useState ===== */}

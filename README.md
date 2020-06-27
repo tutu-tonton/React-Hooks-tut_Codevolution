@@ -24,3 +24,8 @@
 
 - useEffect: render後に実行される
 
+## 8 Conditionally run effects
+
+- useEffectのdependency ー stateが変更される -> 再レンダリング -> 余分なものまで際レンダリングされてしまう可能性あり
+- => dependencyを設定する
+
