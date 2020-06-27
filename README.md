@@ -36,3 +36,9 @@
 ## 10 useEffect with cleanup
 
 - アンマウント時には、subscription, listenerを解除すること
+
+## 11 useEffect with incorrect dependency
+
+- dependencyは変更を監視する必要があるものを記述する
+- dependencyに[]宣言するときは、本当に何もなくていいのか確認
+

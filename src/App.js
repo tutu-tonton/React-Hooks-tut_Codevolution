@@ -9,12 +9,14 @@ import './App.css';
 // import HookCounter from './components/HookCounter';
 // import HookCounterOne from './components/HookCounterOne';
 // import HookMouse from './components/HookMouse';
-import MouseContainer from './components/MouseContainer';
+// import MouseContainer from './components/MouseContainer';
+import IntervalHookCounter from './components/IntervalHookCounter';
 
 function App() {
 	return (
 		<div className="App">
-			<MouseContainer />
+			<IntervalHookCounter />
+			{/* <MouseContainer /> */}
 			{/* <HookMouse /> */}
 			{/* <HookCounterOne /> */}
 			{/* <HookCounter /> */}
