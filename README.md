@@ -8,37 +8,40 @@
 
 ## 3.useState with previous state
 
-- Stateのsetter更新注意点： 古い値を利用して新しい値を算出する場合には、関数を与えるのが安全
+-   State の setter 更新注意点： 古い値を利用して新しい値を算出する場合には、関数を与えるのが安全
 
 ## 4.useState with object
 
-- hooksのstateSetterはobjectをmergeしない.クラス型との違い
+-   hooks の stateSetter は object を merge しない.クラス型との違い
 
-- => spread演算子使うこと
+-   => spread 演算子使うこと
 
 ## 5.useState with array
 
-- stateのsetterには、spread演算子使うこと
+-   state の setter には、spread 演算子使うこと
 
 ## 7 useEffect after render
 
-- useEffect: render後に実行される
+-   useEffect: render 後に実行される
 
 ## 8 Conditionally run effects
 
-- useEffectのdependency ー stateが変更される -> 再レンダリング -> 余分なものまで際レンダリングされてしまう可能性あり
-- => dependencyを設定する
+-   useEffect の dependency ー state が変更される -> 再レンダリング -> 余分なものまで際レンダリングされてしまう可能性あり
+-   => dependency を設定する
 
 ## 9 Run effects only once
 
-- componentDidMountと同じように、1度だけ実行したい
+-   componentDidMount と同じように、1 度だけ実行したい
 
 ## 10 useEffect with cleanup
 
-- アンマウント時には、subscription, listenerを解除すること
+-   アンマウント時には、subscription, listener を解除すること
 
 ## 11 useEffect with incorrect dependency
 
-- dependencyは変更を監視する必要があるものを記述する
-- dependencyに[]宣言するときは、本当に何もなくていいのか確認
+-   dependency は変更を監視する必要があるものを記述する
+-   dependency に[]宣言するときは、本当に何もなくていいのか確認
 
+## 12 FEtching data with useEffect
+
+-   useEffect で dataFetch
