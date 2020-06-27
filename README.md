@@ -29,3 +29,7 @@
 - useEffectのdependency ー stateが変更される -> 再レンダリング -> 余分なものまで際レンダリングされてしまう可能性あり
 - => dependencyを設定する
 
+## 9 Run effects only once
+
+- componentDidMountと同じように、1度だけ実行したい
+
