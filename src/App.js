@@ -4,12 +4,18 @@ import './App.css';
 // import HookCounter from './components/HookCounter.component';
 // import HookCounterTwo from './components/HookCounterTwo.component';
 // import HookCounterThree from './components/HookCounterThree.component';
-import HookCounterFour from './components/HookCounterFour.component';
+// import HookCounterFour from './components/HookCounterFour.component';
+// import ClassCounterOne from './components/ClassCounterOne';
+import HookCounter from './components/HookCounter';
 
 function App() {
 	return (
 		<div className="App">
-			<HookCounterFour />
+			<HookCounter />
+			{/* <ClassCounterOne /> */}
+
+			{/* ===== useState ===== */}
+			{/* <HookCounterFour /> */}
 			{/* <HookCounterThree /> */}
 			{/* <HookCounterTwo /> */}
 			{/* <HookCounter /> */}

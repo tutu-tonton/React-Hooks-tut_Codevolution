@@ -20,3 +20,7 @@
 
 - stateのsetterには、spread演算子使うこと
 
+## 7 useEffect after render
+
+- useEffect: render後に実行される
+
