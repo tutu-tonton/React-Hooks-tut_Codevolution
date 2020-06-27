@@ -45,3 +45,7 @@
 ## 12 FEtching data with useEffect
 
 -   useEffect で dataFetch
+
+## 13 Fetching data with useEffect
+
+-   入力欄の数値に応じた post を取得できるように
