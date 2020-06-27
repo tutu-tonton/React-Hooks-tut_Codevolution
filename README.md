@@ -15,3 +15,8 @@
 - hooksのstateSetterはobjectをmergeしない.クラス型との違い
 
 - => spread演算子使うこと
+
+## 5.useState with array
+
+- stateのsetterには、spread演算子使うこと
+
