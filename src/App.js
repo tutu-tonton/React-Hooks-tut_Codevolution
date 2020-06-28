@@ -12,14 +12,15 @@ import './App.css';
 // import IntervalHookCounter from './components/IntervalHookCounter';
 // import DataFetching from './components/useEffect/DataFetching';
 // ===== useContext =====
-import ComponentC from './components/ComponentC';
-
+import ComponentC from './components/useContext/ComponentC';
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
+// ===== useReducer =====
 
 function App() {
 	return (
 		<div className="App">
+			{/* ===== useContext ===== */}
 			<UserContext.Provider value={'Vishwas'}>
 				<ChannelContext.Provider value={'Codevolution'}>
 					<ComponentC />

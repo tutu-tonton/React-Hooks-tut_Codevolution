@@ -1,5 +1,10 @@
+//========================================
+//  contextAPIと使った書き方
+//  ネストがひどい
+//========================================
+
 import React from 'react';
-import { UserContext, ChannelContext } from '../App';
+import { UserContext, ChannelContext } from '../../App';
 
 const ComponentF = () => {
 	return (

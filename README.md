@@ -57,4 +57,13 @@
 ## 16 useContext Hook part2
 
 -   ContextAPI を使った context
+-   context3 ステップ - create / provider / consumer
 -   :x: ネストが多く見辛い
+
+## 17 useContext Hook part3
+
+-   useContext は 3 ステップの内、consumer 部分を簡単にする
+
+## 19 useReducer(simple state & action☄)
+
+-
