@@ -49,3 +49,7 @@
 ## 13 Fetching data with useEffect
 
 -   入力欄の数値に応じた post を取得できるように
+
+## 14 Fetching data with useEffect
+
+-   ボタンクリックで FetchData
