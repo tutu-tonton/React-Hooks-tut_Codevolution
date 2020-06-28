@@ -66,4 +66,5 @@
 
 ## 19 useReducer(simple state & action☄)
 
--
+-   useReducer ミニマム構成
+-   3 ステップ : イニシャライズ / reducer 定義 / リターン

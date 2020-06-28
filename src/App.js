@@ -12,20 +12,23 @@ import './App.css';
 // import IntervalHookCounter from './components/IntervalHookCounter';
 // import DataFetching from './components/useEffect/DataFetching';
 // ===== useContext =====
-import ComponentC from './components/useContext/ComponentC';
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+// import ComponentC from './components/useContext/ComponentC';
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
 // ===== useReducer =====
+import CounterOne from './components/useReducer/CounterOne';
 
 function App() {
 	return (
 		<div className="App">
+			<CounterOne />
+
 			{/* ===== useContext ===== */}
-			<UserContext.Provider value={'Vishwas'}>
+			{/* <UserContext.Provider value={'Vishwas'}>
 				<ChannelContext.Provider value={'Codevolution'}>
 					<ComponentC />
 				</ChannelContext.Provider>
-			</UserContext.Provider>
+			</UserContext.Provider> */}
 
 			{/* ===== useEffect ===== */}
 			{/* <DataFetching /> */}
