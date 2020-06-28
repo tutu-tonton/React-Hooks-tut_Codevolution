@@ -53,3 +53,8 @@
 ## 14 Fetching data with useEffect
 
 -   ボタンクリックで FetchData
+
+## 16 useContext Hook part2
+
+-   ContextAPI を使った context
+-   :x: ネストが多く見辛い

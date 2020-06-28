@@ -1,22 +1,33 @@
 import React from 'react';
 import './App.css';
-// import ClassCounter from './components/ClassCounter.component';
+// ===== useState =====
 // import HookCounter from './components/HookCounter.component';
 // import HookCounterTwo from './components/HookCounterTwo.component';
 // import HookCounterThree from './components/HookCounterThree.component';
 // import HookCounterFour from './components/HookCounterFour.component';
-// import ClassCounterOne from './components/ClassCounterOne';
 // import HookCounter from './components/HookCounter';
 // import HookCounterOne from './components/HookCounterOne';
 // import HookMouse from './components/HookMouse';
 // import MouseContainer from './components/MouseContainer';
 // import IntervalHookCounter from './components/IntervalHookCounter';
-import DataFetching from './components/DataFetching';
+// import DataFetching from './components/useEffect/DataFetching';
+// ===== useContext =====
+import ComponentC from './components/ComponentC';
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
 	return (
 		<div className="App">
-			<DataFetching />
+			<UserContext.Provider value={'Vishwas'}>
+				<ChannelContext.Provider value={'Codevolution'}>
+					<ComponentC />
+				</ChannelContext.Provider>
+			</UserContext.Provider>
+
+			{/* ===== useEffect ===== */}
+			{/* <DataFetching /> */}
 			{/* <IntervalHookCounter /> */}
 			{/* <MouseContainer /> */}
 			{/* <HookMouse /> */}
