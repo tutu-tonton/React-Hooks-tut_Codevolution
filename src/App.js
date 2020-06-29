@@ -18,38 +18,64 @@ import './App.css';
 // ===== useReducer =====
 // import CounterOne from './components/useReducer/CounterOne';
 // import CounterTwo from './components/useReducer/CounterTwo';
-import CounterThree from './components/useReducer/CounterThree';
+// import CounterThree from './components/useReducer/CounterThree';
+// ===== useReducer with useContext =====
+import { useReducer } from 'react';
+import ComponentA from './components/useReducerWithUseContext/ComponentA.js';
+import ComponentB from './components/useReducerWithUseContext/ComponentB.js';
+import ComponentC from './components/useReducerWithUseContext/ComponentC.js';
+
+export const CountContext = React.createContext();
+
+const initialState = 0;
+const countReducer = (state, action) => {
+	switch (action) {
+		case 'INCREMENT':
+			return state + 1;
+		case 'DECREMENT':
+			return state - 1;
+		case 'RESET':
+			return initialState;
+		default:
+			return state;
+	}
+};
 
 function App() {
+	const [count, dispatch] = useReducer(countReducer, initialState);
 	return (
-		<div className="App">
-			<CounterThree />
-			{/* <CounterTwo /> */}
-			{/* <CounterOne /> */}
-
-			{/* ===== useContext ===== */}
-			{/* <UserContext.Provider value={'Vishwas'}>
+		<CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+			<div className="App">
+				Count : {count}
+				<ComponentA />
+				<ComponentB />
+				<ComponentC />
+				{/* ===== useReducer ===== */}
+				{/* <CounterThree /> */}
+				{/* <CounterTwo /> */}
+				{/* <CounterOne /> */}
+				{/* ===== useContext ===== */}
+				{/* <UserContext.Provider value={'Vishwas'}>
 				<ChannelContext.Provider value={'Codevolution'}>
 					<ComponentC />
 				</ChannelContext.Provider>
 			</UserContext.Provider> */}
-
-			{/* ===== useEffect ===== */}
-			{/* <DataFetching /> */}
-			{/* <IntervalHookCounter /> */}
-			{/* <MouseContainer /> */}
-			{/* <HookMouse /> */}
-			{/* <HookCounterOne /> */}
-			{/* <HookCounter /> */}
-			{/* <ClassCounterOne /> */}
-
-			{/* ===== useState ===== */}
-			{/* <HookCounterFour /> */}
-			{/* <HookCounterThree /> */}
-			{/* <HookCounterTwo /> */}
-			{/* <HookCounter /> */}
-			{/* <ClassCounter /> */}
-		</div>
+				{/* ===== useEffect ===== */}
+				{/* <DataFetching /> */}
+				{/* <IntervalHookCounter /> */}
+				{/* <MouseContainer /> */}
+				{/* <HookMouse /> */}
+				{/* <HookCounterOne /> */}
+				{/* <HookCounter /> */}
+				{/* <ClassCounterOne /> */}
+				{/* ===== useState ===== */}
+				{/* <HookCounterFour /> */}
+				{/* <HookCounterThree /> */}
+				{/* <HookCounterTwo /> */}
+				{/* <HookCounter /> */}
+				{/* <ClassCounter /> */}
+			</div>
+		</CountContext.Provider>
 	);
 }
 

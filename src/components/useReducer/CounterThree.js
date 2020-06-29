@@ -1,7 +1,5 @@
 //========================================
 //  lesson 21 Multiple useReducer
-//  シンプル・ミニマム構成
-//  state/action オブジェクト形式でない
 //========================================
 import React, { useReducer } from 'react';
 

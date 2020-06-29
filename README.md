@@ -78,3 +78,10 @@
 ## 21 Multiple useReducers
 
 -   ロジックが同じなら、reducerFunc を使い回せる
+
+## 22 useReducer with useContext
+
+1. useReducer 作成 - state, action
+2. useContext 作成 - create, Provider
+3. useContext-value に dispatch 乗せる
+4. [受け手] useContext 変数化して使用
