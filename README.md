@@ -64,7 +64,11 @@
 
 -   useContext は 3 ステップの内、consumer 部分を簡単にする
 
-## 19 useReducer(simple state & action☄)
+## 19 useReducer(simple state & action)
 
 -   useReducer ミニマム構成
 -   3 ステップ : イニシャライズ / reducer 定義 / リターン
+
+## 20 useReducer(complex state & action)
+
+-

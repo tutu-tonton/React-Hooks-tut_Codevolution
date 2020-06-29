@@ -16,12 +16,14 @@ import './App.css';
 // export const UserContext = React.createContext();
 // export const ChannelContext = React.createContext();
 // ===== useReducer =====
-import CounterOne from './components/useReducer/CounterOne';
+// import CounterOne from './components/useReducer/CounterOne';
+import CounterTwo from './components/useReducer/CounterTwo';
 
 function App() {
 	return (
 		<div className="App">
-			<CounterOne />
+			<CounterTwo />
+			{/* <CounterOne /> */}
 
 			{/* ===== useContext ===== */}
 			{/* <UserContext.Provider value={'Vishwas'}>

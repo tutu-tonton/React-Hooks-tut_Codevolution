@@ -1,3 +1,8 @@
+//========================================
+//  lesson 19 useReducer
+//  シンプル・ミニマム構成
+//  state/action オブジェクト形式でない
+//========================================
 import React, { useReducer } from 'react';
 
 const initialState = 0;
