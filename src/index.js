@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
-import App_23_FetchingData from './App_23_FetchingData';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 	<React.StrictMode>
-		{/* <App /> */}
-		<App_23_FetchingData />
+		<App />
 	</React.StrictMode>,
 	document.getElementById('root')
 );

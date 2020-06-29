@@ -90,3 +90,8 @@
 
 -   :x: エラー発生中
 -   データフェッチ - useState を使ったやり方
+
+## 24 Fetching data with useReducer part2
+
+-   :x: エラー発生中
+-   データフェッチ : useReducer 使ったやり方
