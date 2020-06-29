@@ -85,3 +85,8 @@
 2. useContext 作成 - create, Provider
 3. useContext-value に dispatch 乗せる
 4. [受け手] useContext 変数化して使用
+
+## 23 Fetching data with useReducer part1
+
+-   :x: エラー発生中
+-   データフェッチ - useState を使ったやり方
