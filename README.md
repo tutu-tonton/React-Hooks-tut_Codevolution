@@ -71,4 +71,10 @@
 
 ## 20 useReducer(complex state & action)
 
--
+-   state / action オブジェクト形式にする
+-   state オブジェクトになってるので、分割代入
+-   action オブジェクト形式になってるので、payload にその他情報記入できる
+
+## 21 Multiple useReducers
+
+-   ロジックが同じなら、reducerFunc を使い回せる

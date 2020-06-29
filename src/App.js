@@ -17,12 +17,14 @@ import './App.css';
 // export const ChannelContext = React.createContext();
 // ===== useReducer =====
 // import CounterOne from './components/useReducer/CounterOne';
-import CounterTwo from './components/useReducer/CounterTwo';
+// import CounterTwo from './components/useReducer/CounterTwo';
+import CounterThree from './components/useReducer/CounterThree';
 
 function App() {
 	return (
 		<div className="App">
-			<CounterTwo />
+			<CounterThree />
+			{/* <CounterTwo /> */}
 			{/* <CounterOne /> */}
 
 			{/* ===== useContext ===== */}
